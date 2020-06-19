@@ -55,14 +55,9 @@
                     'Authorization': `Bearer ${token}`
                 }})
                 .then((res) => {
-                    alert(res.data.msg)
-
                     setTimeout(() => {
                         window.location.replace('/admin.html')
                     }, 2000)
-                })
-                .catch((error) => {
-                    alert('Erreur : '+ error.response.data.msg)
                 })
         })
     }
